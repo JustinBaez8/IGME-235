@@ -1,2 +1,2 @@
 # IGME-235
-Justin Baez's IGME 235 Repo
+Justin Baez's Repo for IGME 235
