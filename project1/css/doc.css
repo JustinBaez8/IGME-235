@@ -1,0 +1,28 @@
+html {
+    font-family: "Gill Sans", "gill-sans-nova", sans-serif;
+    background-color: #F4F5F5;
+    color: #2C4150;
+    margin: 10px;
+    font-size: 100%;
+}
+
+a:link {
+    color: #45B7C6;
+}
+
+a:visited {
+    color: #F76770;
+}
+
+a:focus
+{
+    color: #F49D37;
+}
+
+a:hover {
+    color: #F49D37;
+}
+
+a:active {
+    color: #FBFF12; 
+}

@@ -1,0 +1,478 @@
+html {
+    font-family: "Gill Sans", "gill-sans-nova", sans-serif;
+    background-color: #F4F5F5;
+    color: #2C4150;
+    margin: 10px;
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 6vw;
+    text-decoration-line: underline;
+    text-decoration-thickness: 10%;
+}
+
+h2 {
+    font-size: 6vw;
+}
+
+h3 {
+    font-size: 2vw;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+    grid-template-rows: 20vh 40vh 40vh 20vh;
+    gap: 10% 10px;
+    grid-template-areas:
+        "logo       title"
+        "author     subtitle"
+        "content    content"
+        "content    content";
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.graphs img {
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #1B2932);
+    z-index: -1;
+}
+
+footer blockquote {
+    font-weight: 700;
+    font-size: 2vw;
+    padding-top: 50px;
+    padding-bottom: 0.5vh;
+    border-bottom: 1.5vw solid #2C4150;
+    line-height: 150%;
+}
+
+footer blockquote strong {
+    font-size: 3vw;
+}
+
+#ivan_pope figcaption {
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+.quotes {
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+p {
+    font-weight: 500;
+}
+
+a:link {
+    color: #45B7C6;
+}
+
+a:visited {
+    color: #F76770;
+}
+
+a:focus,
+a:hover {
+    color: #F49D37;
+}
+
+a:active {
+    color: #FBFF12;
+}
+
+main {
+    margin-top: 50px;
+}
+
+article strong {
+    font-size: 5vw;
+    padding: 0px;
+    margin: 0px;
+}
+
+article p {
+    font-size: 1.2vw;
+}
+
+#author {
+    display: flex;
+    justify-items: right;
+    grid-area: author;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#title {
+    grid-area: title;
+}
+
+#subtitle {
+    display: inline-block;
+    grid-area: subtitle;
+}
+
+#content {
+    margin-top: 5%;
+    grid-area: content;
+}
+
+#logo img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 0px;
+    margin-left: 30%;
+    padding-bottom: 60px;
+}
+
+#author img {
+    margin: 0px;
+    padding: 0px;
+    width: 15vw;
+    height: auto;
+    margin-left: 15%;
+}
+
+#title h1 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: -3%;
+}
+
+#author figcaption {
+    display: block;
+    inline-size: 100%;
+    margin-left: 15%;
+    /* margin-right: 70px; */
+}
+
+#title h2 {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#subtitle {
+    margin-top: -2vh;
+}
+
+#subtitle figure {
+    display: flex;
+    column-count: 2;
+    column-gap: 1vw;
+}
+
+#subtitle h3 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    white-space: pre-wrap;
+}
+
+#subtitle p {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    white-space: pre-wrap;
+    font-size: 1.5vw;
+    font-weight: 800;
+    margin: 0px auto;
+    padding-right: -1vw;
+}
+
+aside {
+    font-style: italic;
+    color: #45B7C6;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+aside h4 {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+#content article {
+    margin-top: -5vh;
+    padding-right: 50%;
+}
+
+.graphs #big_graph {
+    float: right;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#byte_map
+{
+    width: 25%;
+    float: right;
+    margin-right: -70%;
+    margin-top: 25%;
+}
+
+.graphs #log_count 
+{
+    width: 25%;
+    float: right;
+    margin-right: -70%;
+    margin-top: 5%;
+}
+
+#content footer
+{
+    display:block;
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+#documentation
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 62%;
+}
+
+#documentation a
+{
+    font-size: 2vw;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin-left: -20px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    background-color: #1B2932;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7.5%;
+    z-index: 2;
+}
+
+li
+{
+    float: right;
+}
+
+li a
+{
+    display: block;
+    color: #45B7C6;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: #2C4150;
+}
+
+li a:visited {
+    color: #45B7C6;
+}
+
+@media screen and (max-width: 768px)
+{
+    #container
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 2%;
+        grid-template-areas:
+            "logo"
+            "title"
+            "author"
+            "subtitle"
+            "content";
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #logo
+    {
+        display: none;
+        grid-area: logo;
+    }
+    
+    #title
+    {
+        grid-area: title;
+    }
+
+    #title h1
+    {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #title h2
+    {
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: top;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+    }
+
+    #subtitle {
+        display: inline-block;
+        grid-area: subtitle;
+    }
+
+    #subtitle p
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: pre-wrap;
+        font-size: 2vw;
+        font-weight: 800;
+        margin: 0px auto;
+        /* padding-right: -1vw; */
+    }
+
+    #content
+    {
+        grid-area: content;
+    }
+    #author
+    {
+        display: flex;
+        justify-content: center;
+        columns: 2;
+        grid-area: author;
+    }
+
+    #author img
+    {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: auto;
+        padding-bottom: 10px;
+        width: 50%;
+        height: auto;
+    }
+
+    #ivan_pope figcaption {
+        font-size: 2vw;
+        font-weight: 800;
+        margin-left: 15%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        list-style-type: none;
+        margin-left: -20px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+        padding: 0;
+        background-color: #1B2932;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 7.5%;
+        z-index: 2;
+    }
+
+    li a
+    {
+        display: block;
+        color: #45B7C6;
+        text-align: center;
+        padding: 18px 20px;
+        text-decoration: none;
+        font-size: 3vw;
+    }
+
+    article p {
+        font-size: 2vw;
+    }
+
+    .quotes {
+        font-size: 2vw;
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+    }
+
+    .graphs
+    {
+       clear: both;
+       margin-right: -10%; 
+       margin-top: -5%;
+       padding-left: 30px;
+    }
+
+    .graphs #big_graph
+    {
+        float: right;
+        width: 50%;
+    }
+
+    .graphs #log_count
+    {
+        float: right;
+        width: 50%;
+        margin-top: 5%;
+        margin-right: 10%;
+        padding: 0;
+    }
+
+    .graphs #byte_map
+    {
+        float: right;
+        width: 50%;
+        margin-top: 5%;
+        margin-right: 10%;
+        padding: 0;
+    }
+    
+    #content footer
+    {
+        display:block;
+        width: 75%;
+        height: auto;
+        margin: auto;
+        margin-top: -5%;
+    }
+
+    #documentation
+    {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30%;
+    }
+}
